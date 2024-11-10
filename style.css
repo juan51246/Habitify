@@ -1,0 +1,149 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    /* Remove margens padrão de todos os elementos */
+    padding: 0;
+    /* Remove preenchimentos padrão de todos os elementos */
+    box-sizing: border-box;
+    /* Inclui padding e borda na largura e altura total dos elementos */
+}
+
+body {
+    width: 100%;
+    /* Define a largura do body para 100% da tela */
+    max-width: 320px;
+    /* Limita a largura máxima do body a 320px */
+    margin: 0 auto;
+    /* Centraliza o body horizontalmente */
+    background-image: url(background2.jpg);
+    /*Imagem de fundo da aplicação*/
+    background-size: cover;
+    /*Faz com que a imagem fique centralizada na tela*/
+    color: #212121;
+    /* Define a cor do texto no body */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Define a fonte padrão do texto */
+    display: flex;
+    /* Usa flexbox para organizar o layout */
+    align-items: center;
+    /* Centraliza verticalmente os itens */
+    height: 100vh;
+    /* Define a altura do body para 100% da altura da janela de visualização */
+}
+
+/* Contêiner principal */
+.container {
+    width: 100%;
+    /* Define a largura do contêiner como 100% do body */
+    backdrop-filter: blur(5px);
+    /*Filtro de Desfoque no fundo do container*/
+    border: 1px solid #DBF227;
+    /* Adiciona uma borda cinza ao redor do contêiner */
+    border-radius: 8px;
+    /* Arredonda os cantos do contêiner */
+    padding: 20px;
+    /* Adiciona espaço interno ao contêiner */
+    text-align: center;
+    /* Centraliza o texto dentro do contêiner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adiciona sombra para dar profundidade ao contêiner */
+}
+
+h1{
+    padding-bottom: 20px;
+    color: #DBF227;
+}
+
+/* Campos de entrada e botões */
+input,
+button,
+select {
+    width: 100%;
+    /* Define a largura de inputs e botões como 100% do contêiner */
+    padding: 10px;
+    /* Adiciona espaço interno aos inputs e botões */
+    margin: 10px 0;
+    /* Adiciona margem vertical entre os elementos */
+    border-radius: 5px;
+    /* Arredonda os cantos dos inputs e botões */
+    font-size: 16px;
+    /* Define o tamanho da fonte dos inputs e botões */
+}
+
+a {
+    text-decoration: none;
+    /*Remove a decoração dos botoes de habitos 1 e 2*/
+}
+a:hover{
+    transform: scale(1.05);
+}
+
+/* Estilo do botão principal */
+button {
+    background-color: #DBF227;
+    /* Define a cor de fundo do botão principal */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto do botão como branco */
+    border: none;
+    /* Remove a borda padrão do botão */
+    cursor: pointer;
+    /* Muda o cursor para uma mão quando o mouse passa sobre o botão */
+}
+
+button:hover{
+    transform: scale(1.05);
+    transition: 100ms;
+    background-color: #90a019;
+}
+
+/* Botão de destaque */
+button.highlight {
+    background-color: #FFB74D;
+    /* Define a cor de fundo do botão de destaque */
+}
+
+.btn-secondary{
+    background-color: red;
+}
+.btn-secondary:hover{
+    transform: scale(1.05);
+    transition: 100ms;
+    background-color: rgb(164, 0, 0);
+}
+/* Link */
+.link {
+    color: #FFB74D;
+    /* Define a cor do texto do link */
+    text-decoration: none;
+    /* Remove o sublinhado padrão do link */
+}
+
+/* Caixa de hábito e progresso */
+.habit-box,
+.progress-box {
+    width: 100%;
+    /* Define a largura das caixas como 100% do contêiner */
+    padding: 15px;
+    /* Adiciona espaço interno às caixas */
+    margin: 10px 0;
+    /* Adiciona margem vertical entre as caixas */
+    border-radius: 5px;
+    /* Arredonda os cantos das caixas */
+    background-color: #DBF227;
+    /* Define a cor de fundo das caixas */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto dentro das caixas como branco */
+}
+
+/* Estilo do canvas */
+canvas {
+    max-width: 100%;
+    /* Limita a largura máxima do canvas a 100% do contêiner */
+    margin: auto;
+    /* Centraliza o canvas horizontalmente */
+    width: 352px;
+    /* Define a largura do canvas */
+    height: 264px;
+    /* Define a altura do canvas */
+}
+
